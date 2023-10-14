@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Add Book";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <form>
+        <!-- Page Heading -->
+        <div class="d-flex align-items-center justify-content-between py-3">
+            <h1 class="h3 mb-0 text-gray-800">Add Book</h1>
+            <div class="col-4 col-md-2">
+                <button type="submit" class="btn btn-primary w-100">
+                    <i class="fa-solid fa-floppy-disk"></i>&nbsp; Save
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 p-2">
+                <label>ISBN</label>
+                <input type="text" id="txtISBN" class="form-control w-100" required />
+            </div>
+            <div class="col-12 col-sm-6 p-2">
+                <label>Author Name</label>
+                <input type="text" id="txtAuthorName" class="form-control w-100" required />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 p-2">
+                <label>Book Title</label>
+                <input type="text" id="txtBookTitle" class="form-control w-100" required />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 p-2">
+                <label>Category</label>
+                <input type="text" id="txtCategory" class="form-control w-100" required />
+            </div>
+            <div class="col-12 col-sm-6 p-2">
+                <label>Publisher</label>
+                <input type="text" id="txtPublisher" class="form-control w-100" required />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 p-2">
+                <label>Price</label>
+                <input type="text" id="txtPrice" class="form-control w-100" required />
+            </div>
+            <div class="col-12 col-sm-6 p-2">
+                <label>Quantity</label>
+                <input type="text" id="txtQuantity" class="form-control w-100" required />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 p-2">
+                <label>Book Cover Photo</label>
+                <input type="file" id="txtBookCoverPhoto" class="form-control w-100" />
+            </div>
+        </div>
+        <div class="justify-content-center py-3">
+        </div>
+
+    </form>
+</div>
+@*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".nav_link").removeClass("active");
+        $("#aAddBook").addClass("active");
+    })
+</script>
